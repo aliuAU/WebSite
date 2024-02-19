@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Space Mono", Arial, serif;
+  font-weight: normal;
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to top left, #ff5f1f, #ffee91);
+  margin: 0;
+}
+
+h1 {
+  padding: 50px 0;
+  width: 100%;
+  overflow: hidden;
+  border-right: 0.005em solid orange;
+  white-space: nowrap;
+  margin: auto;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(50, end) infinite,
+    blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-family: "Space Mono", Arial, serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(to top left, #f5f510, #ff5f1f);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to top left, #ff5f1f, #f5f511);
+}
